@@ -1,2 +1,0 @@
-# cuantasllevo
-cuántas llevo?
