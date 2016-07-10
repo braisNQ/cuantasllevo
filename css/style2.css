@@ -1,0 +1,58 @@
+.divcount {
+    margin: 0 auto;
+    margin-top: 5px;
+    border-radius: 50%;
+    border: 2px solid #006600;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+}
+
+.divcount span {
+   height: 150px;
+   display: inline-block;
+   zoom: 1;
+   *display: inline;
+   vertical-align: middle;
+}
+
+.divcount p {
+   display: inline-block;
+   zoom: 1;
+   *display: inline;
+   vertical-align: middle;
+   font-size: 50pt;
+}
+
+.btnmenu {
+    width: 100%;
+    margin-top: 5px;
+}
+
+.contentmargin {
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+#home, #list, #settings, #info {    
+    position: relative;
+}
+
+body {overflow: hidden;}
+
+.bottommenu {
+  position: fixed;
+  bottom: 0px;
+  width: 100%;
+  z-index: 1;
+  border: 1px solid;
+  border-width: 1px 0 0 0;
+  background: #f0f0f0;
+  border-color: #c7c7c7;
+}
+
+.bottommenu li {
+    width: 25%;
+    text-align: center;
+    font-size: 15pt;
+}

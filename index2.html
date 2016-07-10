@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Cu&aacute;ntas llevo?</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="assets/bootstrap-3.3.6-dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="assets/font-awesome-4.6.3/css/font-awesome.min.css">
+
+    <!-- custom css-->
+    <link rel="stylesheet" href="css/style2.css">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+
+<body>
+
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <a class="navbar-brand" href="#">Cu&aacute;ntas llevo?</a>
+    </nav>
+
+    <!-- content -->
+    <div class="container contentmargin">
+
+        <div class="alert alert-info alert-dismissible fade in text-center" role="alert">
+            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            <strong>duckwerty</strong> recomienda el consumo responsable.
+        </div>
+
+        <!-- Tab panes -->
+        <div class="tab-content">
+            <div class="tab-pane fade active in" id="home">
+                <div class="divcount">
+                    <span></span>
+                    <p id="p_count">0</p>
+                </div>
+
+                <div class="container">
+                    <a href="#" class="btn btn-success btnmenu" onclick="incrementCount(1)">
+                        <i class="fa fa-beer" aria-hidden="true"></i>
+                        <i class="fa fa-plus" aria-hidden="true"></i>
+                    </a>
+                    <br />
+                    <a href="#" class="btn btn-danger btnmenu" onclick="decrementCount(1)">
+                        <i class="fa fa-beer" aria-hidden="true"></i>
+                        <i class="fa fa-minus" aria-hidden="true"></i>
+                    </a>
+                    <br />
+                    <a href="#" class="btn btn-info btnmenu" onclick="resetCount()">
+                        <i class="fa fa-refresh" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="tab-pane fade" id="list">
+                This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />This is the profile page content
+                <br /> aaaaaaaaaaaa
+                <br />
+            </div>
+            <div class="tab-pane fade" id="settings">This is the message page content </div>
+            <div class="tab-pane fade" id="info">
+                <div class="container">
+                    <div class="row">
+                        <h4>v0.2 <em class="pull-right"><small>-/7/16</small></em></h4>
+                        <p>
+                            <ul>
+                                <li>A&ntilde;adido soporte para pesta&ntilde;as y animaciones</li>
+                                <li>A&ntilde;adida la opci&oacute;n de poder fijar el precio</li>
+                                <li>A&ntilde;adida la opci&oacute;n de listar las entradas</li>
+                                <li>A&ntilde;adido changelog</li>
+                            </ul>
+                        </p>
+                    </div>
+                    <div class="row">
+                        <h4>v0.1 <em class="pull-right"><small>9/7/16</small></em></h4>
+                        <p>
+                            <ul>
+                                <li>Primera versi&oacute;n: Contador con botones de sumar, restar y reiniciar.</li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /content -->
+
+    <!-- menu -->
+    <ul class="nav nav-tabs bottommenu">
+        <li class="active">
+            <a href="#home" data-toggle="tab">
+                <i class="fa fa-home" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#list" data-toggle="tab">
+                <i class="fa fa-list" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#settings" data-toggle="tab">
+                <i class="fa fa-cogs" aria-hidden="true"></i>
+            </a>
+        </li>
+        <li>
+            <a href="#info" data-toggle="tab">
+                <i class="fa fa-info-circle" aria-hidden="true"></i>
+            </a>
+        </li>
+    </ul>
+    <!-- /menu -->
+
+    <!-- jQuery -->
+    <script src="assets/jquery-2.1.4/jquery-2.1.4.min.js"></script>
+    <!-- Bootstrap JavaScript -->
+    <script src="assets/bootstrap-3.3.6-dist/js/bootstrap.min.js"></script>
+
+    <!--custom js -->
+    <script src="js/cookies.js"></script>
+    <script src="js/functions.js"></script>
+    <script src="js/animations.js"></script>
+
+    <!-- load count -->
+    <script>showCount()</script>
+</body>
+
+</html>
